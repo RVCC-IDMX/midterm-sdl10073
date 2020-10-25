@@ -8,7 +8,8 @@ body{
 font-family:Georgia;
 background: linear-gradient( to bottom , #765729, black );
 max-width: 850px;
-min-width: 700px;
+margin:0 auto;
+
 
 }
 /* title*/
@@ -70,6 +71,9 @@ h2{
 #cover{
 max-width: 200px;
 max-height:400px;
+float: left;
+margin-right: 20px;
+margin-bottom: 20px;
 
 
 }
@@ -80,6 +84,7 @@ max-height:400px;
 
 /* main body*/
 main{
+    
     padding:20px;
     background-color:rgb(200, 200, 195);;
     border: 2px solid #886644;
@@ -87,6 +92,35 @@ main{
     margin-bottom: 5px;
 
 }
+
+
+
+
+/* body font*/
+.character{
+    font-weight: bold;
+    
+}
+
+/*mainbody img*/
+#pic{
+display: block;
+margin: auto;
+max-width: 800px;
+min-width: 200px;
+max-height: 200px;
+max-width: 100%;
+max-height: auto;
+
+}
+/*img caption*/
+#figcap{
+text-align: center;
+font-size: 15px;
+font-style: oblique;
+margin-top: 3px;
+}
+
 /*aside*/
 aside{
     padding:20px;
@@ -94,12 +128,30 @@ aside{
     border: 2px solid #886644;
     box-shadow:8px 8px 5px grey inset;
     margin-bottom: 5px;
+    display: flex;
 
+}
+.submission{
+background-color: white;
+border:1px solid black;
+max-width: 200px;
+height: 110px;
+text-align: center;
+margin-left: 10px;
+padding: 20px;
+
+}
+
+#signiture{
+
+
+    font-style: oblique;
 
 
 
 
 }
+
 
 /*footer*/
 footer{
@@ -113,4 +165,14 @@ footer{
     margin-bottom: 0px;
     border-bottom-left-radius: 3em;
     border-bottom-right-radius: 3em;
+}
+@media screen and(min-width: 60em){
+
+aside{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
 }
